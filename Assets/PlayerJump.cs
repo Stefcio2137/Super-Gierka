@@ -34,10 +34,10 @@ public class PlayerJump : MonoBehaviour
         Vector3 dir = Vector3.zero;
         float y = arrow.eulerAngles.y;
 
-        if (Mathf.Abs(y - 0) < 10f) dir = Vector3.forward;
-        else if (Mathf.Abs(y - 90) < 10f) dir = Vector3.right;
-        else if (Mathf.Abs(y - 180) < 10f) dir = Vector3.back;
-        else if (Mathf.Abs(y - 270) < 10f) dir = Vector3.left;
+        if (Mathf.Abs(y - 90) < 10f) dir = Vector3.forward;
+        else if (Mathf.Abs(y - 180) < 10f) dir = Vector3.right;
+        else if (Mathf.Abs(y - 270) < 10f) dir = Vector3.back;
+        else if (Mathf.Abs(y - 0) < 10f) dir = Vector3.left;
 
         Vector3 targetPos = transform.position + dir * 2f;
 
